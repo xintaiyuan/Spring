@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--第一种，下标赋值！
+    <bean id="user" class="com.yuan.pojo.User">
+        <constructor-arg index="0" value="程序源1"/>
+    </bean>-->
+
+    <!--第二种，不建议使用，通过参数类型创建
+    <bean id="user" class="com.yuan.pojo.User">
+        <constructor-arg type="java.lang.String" value="程序源2"/>
+    </bean>-->
+
+    <!--通过参数名创建-->
+    <bean id="user" class="com.yuan.pojo.User">
+       <constructor-arg name="name" value="程序源3"/>
+    </bean>
+
+
+
+
+</beans>
